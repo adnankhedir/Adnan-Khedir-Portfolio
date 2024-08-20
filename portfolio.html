@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Khedir - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeInDown 1s;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            animation: fadeInUp 1.5s;
+        }
+
+        .content {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-me,
+        .skills,
+        .projects {
+            margin-bottom: 60px;
+        }
+
+        .about-me p,
+        .skills ul,
+        .projects .project {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills ul li {
+            background: #1a2a6c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            animation: fadeIn 1.5s;
+        }
+
+        .projects .project {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        .projects .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project-tech {
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #fdbb2d;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="animate__animated animate__fadeInDown">Adnan Khedir</h1>
+        <p class="animate__animated animate__fadeInUp">Turning Ideas Into Reality Through Code</p>
+    </header>
+
+    <div class="content">
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I’m a dedicated computer scientist with a passion for developing innovative solutions that solve real-world problems. With a degree in Computer Science and expertise in web development, software development, and mobile app development, I bring a diverse skill set to every project I work on.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>React</li>
+                <li>Laravel</li>
+                <li>Flutter</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>AWS</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>My Work</h2>
+
+            <div class="project">
+                <h3 class="project-title">Shine Paint Sales and Finishing Works</h3>
+                <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <p>Developed a comprehensive website for Shine Paint Sales, featuring a dynamic gallery, product catalog, and a user-friendly contact form.</p>
+            </div>
+
+            <div class="project">
+                <h3 class="project-title">Hospital Management System</h3>
+                <p class="project-tech"><strong>Technologies:</strong> PHP, Laravel, MySQL, Bootstrap</p>
+                <p>Created a full-featured system for managing hospital operations, including patient records, billing, and staff management, ensuring efficiency and accuracy in hospital workflows.</p>
+            </div>
+
+            <div class="project">
+                <h3 class="project-title">Health Tracker App</h3>
+                <p class="project-tech"><strong>Technologies:</strong> Flutter, Firebase</p>
+                <p>Built a cross-platform mobile app that helps users monitor their health metrics, offering personalized recommendations for a healthier lifestyle.</p>
+            </div>
+
+            <div class="project">
+                <h3 class="project-title">Inventory Management Software</h3>
+                <p class="project-tech"><strong>Technologies:</strong> C#, .NET, SQL Server</p>
+                <p>Designed and implemented an inventory management system with real-time tracking, helping businesses streamline their inventory processes.</p>
+            </div>
+
+        </section>
+
+        <section class="social-icons">
+            <h2>Connect With Me</h2>
+            <a href="https://www.linkedin.com/in/adnan-khedir-ba5291324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/adnankhedir" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:adnankhedir1@gmail.com"><i class="fas fa-envelope"></i></a>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Adnan Khedir. All rights reserved.</p>
+        <p>Designed by Adnan Khedir</p>
+    </footer>
+
+</body>
+
+</html>
